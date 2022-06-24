@@ -46,6 +46,9 @@ $(call inherit-product, hardware/dolby/dolby.mk)
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth-service.mediatek
 
+# Blur
+TARGET_ENABLE_BLUR := true
+
 # ConfigStore
 PRODUCT_PACKAGES += \
     disable_configstore
