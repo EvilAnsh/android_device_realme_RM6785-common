@@ -65,8 +65,8 @@
 
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">115px</dimen>
-    <dimen name="status_bar_height_default">28dp</dimen>
-    <dimen name="status_bar_height_landscape">28dp</dimen>
+    <dimen name="status_bar_height_default">32dp</dimen>
+    <dimen name="status_bar_height_landscape">32dp</dimen>
 
     <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
          for debouncing the light sensor.  Different constants are used to debounce the light sensor
