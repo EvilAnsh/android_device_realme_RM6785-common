@@ -26,9 +26,9 @@ namespace impl {
 namespace mediatek {
 
 class Power : public BnPower {
+public:
     Power();
     ~Power();
-    int handle;
     ndk::ScopedAStatus setMode(Mode type, bool enabled) override;
     ndk::ScopedAStatus isModeSupported(Mode type, bool* _aidl_return) override;
     ndk::ScopedAStatus setBoost(Boost type, int32_t durationMs) override;
@@ -38,6 +38,9 @@ class Power : public BnPower {
                                          int64_t durationNanos,
                                          std::shared_ptr<IPowerHintSession>* _aidl_return) override;
     ndk::ScopedAStatus getHintSessionPreferredRate(int64_t* outNanoseconds) override;
+private:
+    int mHandle;
+    bool mLowPowerEnabled;
 };
 
 }  // namespace mediatek

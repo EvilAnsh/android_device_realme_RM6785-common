@@ -51,13 +51,16 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
 #endif
         case Mode::LAUNCH:
         {
-            if (this->handle != 0) {
-                libpowerhal_LockRel(this->handle);
-                this->handle = 0;
+            if (mLowPowerEnabled)
+                break;
+
+            if (mHandle != 0) {
+                libpowerhal_LockRel(mHandle);
+                mHandle = 0;
             }
 
             if (enabled)
-                this->handle = libpowerhal_CusLockHint(11, 30000, getpid());
+                mHandle = libpowerhal_CusLockHint(11, 30000, getpid());
 
             break;
         }
@@ -73,6 +76,9 @@ ndk::ScopedAStatus Power::setMode(Mode type, bool enabled) {
                 libpowerhal_UserScnDisableAll();
             break;
         }
+        case Mode::LOW_POWER:
+            mLowPowerEnabled = enabled;
+            break;
         default:
             break;
     }
@@ -87,6 +93,11 @@ ndk::ScopedAStatus Power::isModeSupported(Mode type, bool* _aidl_return) {
 }
 
 ndk::ScopedAStatus Power::setBoost(Boost type, int32_t durationMs) {
+    if (mLowPowerEnabled) {
+        LOG(INFO) << "Will not perform boosts in LOW_POWER";
+        return ndk::ScopedAStatus::ok();
+    }
+
     int32_t intType = static_cast<int32_t>(type);
 
     // Avoid boosts with 0 duration, as those will run indefinitely
