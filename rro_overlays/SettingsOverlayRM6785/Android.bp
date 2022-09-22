@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "SettingsOverlayRM6785",
+    sdk_version: "current",
+    vendor: true
+}
