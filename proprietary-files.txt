@@ -1817,7 +1817,7 @@ framework/mediatek-ims-legacy.jar
 -framework/mediatek-telephony-common.jar
 
 # Radio (ImsService) - https://github.com/realme-mt6785-devs/ImsService
--priv-app/ImsService/ImsService.apk|502dfc9837f5b426536e9a61712a424832e0042c
+-priv-app/ImsService/ImsService.apk|8d0592bc086e30bf8a84c3daa43cadd65c77ba54
 
 # Radio (Oplus)
 -odm/lib/vendor.oplus.hardware.appradio@1.0.so
