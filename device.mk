@@ -41,12 +41,9 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.bluetooth.audio-impl \
-    audio_policy.stub \
+    audio.bluetooth.default \
     audio.r_submix.default \
     audio.usb.default \
-    libalsautils \
-    libaudiofoundation.vendor \
-    libbluetooth_audio_session \
     libtinycompress \
     libtinyxml
 
@@ -59,7 +56,6 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    audio.bluetooth.default \
     android.hardware.bluetooth@1.0.vendor
 
 # Camera
