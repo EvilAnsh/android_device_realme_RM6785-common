@@ -253,14 +253,10 @@ ndk::ScopedAStatus PowerHintSession::close() {
     }
     // Remove the session from PowerSessionManager first to avoid racing.
     PowerSessionManager::getInstance()->removePowerSession(this);
-    setSessionUclampMin(0);
-    {
-        std::lock_guard<std::mutex> guard(mSessionLock);
-        mSessionClosed.store(true);
-    }
-    mDescriptor->is_active.store(false);
     mEarlyBoostHandler->setSessionDead();
     mStaleTimerHandler->setSessionDead();
+    setSessionUclampMin(0);
+    mDescriptor->is_active.store(false);
     updateUniveralBoostMode();
     return ndk::ScopedAStatus::ok();
 }
@@ -491,6 +487,7 @@ void PowerHintSession::StaleTimerHandler::updateTimer(time_point<steady_clock> s
 }
 
 void PowerHintSession::StaleTimerHandler::handleMessage(const Message &) {
+    std::lock_guard<std::mutex> guard(mClosedLock);
     if (mIsSessionDead) {
         return;
     }
@@ -520,7 +517,7 @@ void PowerHintSession::StaleTimerHandler::handleMessage(const Message &) {
 }
 
 void PowerHintSession::StaleTimerHandler::setSessionDead() {
-    std::lock_guard<std::mutex> guard(mStaleLock);
+    std::lock_guard<std::mutex> guard(mClosedLock);
     mIsSessionDead = true;
     PowerHintMonitor::getInstance()->getLooper()->removeMessages(mSession->mStaleTimerHandler);
 }
