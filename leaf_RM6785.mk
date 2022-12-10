@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2021-2022 The LineageOS Project
+# Copyright (C) 2022 The LeafOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -12,8 +13,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RM6785/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit common LeafOS stuff.
+$(call inherit-product, vendor/leaf/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := realme
