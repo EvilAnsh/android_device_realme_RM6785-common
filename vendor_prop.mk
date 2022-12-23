@@ -6,7 +6,7 @@ else
     VENDOR_LOG_LEVEL_D=S
 endif
 
-PRODUCT_PROPERTY_OVERRIDES +=  \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.AdnRecord=$(VENDOR_LOG_LEVEL_I) \
     persist.log.tag.AdnRecordCache=$(VENDOR_LOG_LEVEL_I) \
     persist.log.tag.AdnRecordLoader=$(VENDOR_LOG_LEVEL_I) \
