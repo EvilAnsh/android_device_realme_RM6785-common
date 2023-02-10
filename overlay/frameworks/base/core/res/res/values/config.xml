@@ -335,4 +335,7 @@
 
     <!-- The number of volume steps for the ring stream -->
     <integer name="config_audio_ring_vol_steps">15</integer>
+
+    <!-- Adjustment for software rounded corners since corners aren't perfectly round. -->
+    <dimen name="rounded_corner_radius_adjustment">8px</dimen>
 </resources>
