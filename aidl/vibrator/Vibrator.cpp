@@ -97,38 +97,11 @@ ndk::ScopedAStatus Vibrator::perform(Effect effect, EffectStrength strength, con
         case Effect::CLICK:
             timeoutMs = 70;
             break;
-        case Effect::DOUBLE_CLICK:
-            timeoutMs = 50;
-            activate(timeoutMs);
-            usleep(150000);
-            break;
-        case Effect::TICK:
-        case Effect::THUD:
-        case Effect::POP:
-            timeoutMs = 80;
-            break;
-        case Effect::HEAVY_CLICK:
-            timeoutMs = 90;
-            break;
-        case Effect::RINGTONE_1:
-        case Effect::RINGTONE_2:
-        case Effect::RINGTONE_3:
-        case Effect::RINGTONE_4:
-        case Effect::RINGTONE_5:
-        case Effect::RINGTONE_6:
-        case Effect::RINGTONE_7:
-        case Effect::RINGTONE_8:
-        case Effect::RINGTONE_9:
-        case Effect::RINGTONE_10:
-        case Effect::RINGTONE_11:
-        case Effect::RINGTONE_12:
-        case Effect::RINGTONE_13:
-        case Effect::RINGTONE_14:
-        case Effect::RINGTONE_15:
-            timeoutMs = 1000;
-            break;
         case Effect::TEXTURE_TICK:
             timeoutMs = 40;
+            break;
+        case Effect::TICK:
+            timeoutMs = 80;
             break;
         default:
             return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
@@ -150,14 +123,7 @@ ndk::ScopedAStatus Vibrator::perform(Effect effect, EffectStrength strength, con
 }
 
 ndk::ScopedAStatus Vibrator::getSupportedEffects(std::vector<Effect>* _aidl_return) {
-    *_aidl_return = {Effect::CLICK, Effect::DOUBLE_CLICK, Effect::TICK,
-                     Effect::THUD, Effect::POP, Effect::HEAVY_CLICK,
-                     Effect::RINGTONE_1, Effect::RINGTONE_2, Effect::RINGTONE_3,
-                     Effect::RINGTONE_4, Effect::RINGTONE_5, Effect::RINGTONE_6,
-                     Effect::RINGTONE_7, Effect::RINGTONE_8, Effect::RINGTONE_9,
-                     Effect::RINGTONE_10, Effect::RINGTONE_11, Effect::RINGTONE_12,
-                     Effect::RINGTONE_13, Effect::RINGTONE_14, Effect::RINGTONE_15,
-                     Effect::TEXTURE_TICK};
+    *_aidl_return = {Effect::CLICK, Effect::TEXTURE_TICK, Effect::TICK};
     return ndk::ScopedAStatus::ok();
 }
 
