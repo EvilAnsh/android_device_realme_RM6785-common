@@ -148,7 +148,7 @@ PRODUCT_COPY_FILES += \
 
 # Memtrack
 PRODUCT_PACKAGES += \
-    android.hardware.memtrack-service.RM6785
+    android.hardware.memtrack-service.mediatek-mali
 
 # Neutral Networks
 PRODUCT_PACKAGES += \
