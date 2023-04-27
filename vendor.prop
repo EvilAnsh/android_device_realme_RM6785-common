@@ -182,6 +182,11 @@ ro.soc.model=MT6785
 ro.hardware.kmsetkey=trustonic
 ro.vendor.mtk_trustonic_tee_support=1
 
+# Vibrator
+ro.vendor.vibrator.hal.click.duration=70
+ro.vendor.vibrator.hal.tick.duration=60
+ro.vendor.vibrator.hal.texture_tick.duration=40
+
 # VM
 dalvik.vm.heapgrowthlimit=256m
 dalvik.vm.heapmaxfree=8m
