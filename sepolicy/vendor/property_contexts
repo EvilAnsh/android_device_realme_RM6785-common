@@ -6,6 +6,11 @@ persist.vendor.audio.tuning.def_path        u:object_r:vendor_audio_tunning_prop
 persist.vendor.fingerprint.                 u:object_r:vendor_fingerprint_prop:s0
 vendor.fingerprint.                         u:object_r:vendor_fingerprint_prop:s0
 
+# Media
+ro.vendor.mtk.omx.log                       u:object_r:vendor_mtk_omx_core_prop:s0
+ro.vendor.mtk_crossmount                    u:object_r:vendor_mtk_crossmount_prop:s0
+ro.vendor.mtk_deinterlace                   u:object_r:vendor_mtk_deinterlace_prop:s0
+
 # NFC device
 ro.vendor.nfc_device                        u:object_r:vendor_nfc_prop:s0
 
