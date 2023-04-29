@@ -7,6 +7,7 @@ genfscon proc /touchpanel                                                 u:obje
 
 # Sysfs
 genfscon sysfs /devices/platform/charger/power_supply/usb/otg_switch      u:object_r:sysfs_otg_switch:s0
+genfscon sysfs /devices/platform/extcon_usb/extcon                        u:object_r:sysfs_extcon:s0
 genfscon sysfs /devices/platform/fpc_interrupt                            u:object_r:sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/sia81xx@L/is_81xx                        u:object_r:sysfs_sia81xx:s0
 genfscon sysfs /devices/virtual/oplus_sensor/m_virtual_sensor_misc        u:object_r:sysfs_virtual_sensor:s0
