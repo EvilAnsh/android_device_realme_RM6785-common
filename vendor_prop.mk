@@ -257,4 +257,5 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.WpfaShmReadMsgHandler=$(VENDOR_LOG_LEVEL_I) \
     persist.log.tag.WpfaShmSynchronizer=$(VENDOR_LOG_LEVEL_I) \
     persist.log.tag.WpfaShmWriteMsgHandler=$(VENDOR_LOG_LEVEL_I) \
-    persist.log.tag.gralloc4=$(VENDOR_LOG_LEVEL_I)
+    persist.log.tag.gralloc4=$(VENDOR_LOG_LEVEL_I) \
+    persist.log.tag.mtk_pdc_check_charger=$(VENDOR_LOG_LEVEL_I)
