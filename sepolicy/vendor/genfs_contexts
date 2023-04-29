@@ -12,6 +12,7 @@ genfscon sysfs /devices/platform/fpc_interrupt                            u:obje
 genfscon sysfs /devices/platform/sia81xx@L/is_81xx                        u:object_r:sysfs_sia81xx:s0
 genfscon sysfs /devices/virtual/oplus_sensor/m_virtual_sensor_misc        u:object_r:sysfs_virtual_sensor:s0
 genfscon sysfs /kernel/thunderquake_engine/level                          u:object_r:sysfs_vibrator:s0
+genfscon sysfs /devices/platform/bootdevice/host0/target0:0:0/0:0:0:2/block/sdc/queue/discard_max_bytes u:object_r:sysfs_mmc_host:s0
 
 genfscon sysfs /devices/platform/10228000.gce/wakeup/wakeup0                                                    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/mt_charger/power_supply/charger/wakeup1                                        u:object_r:sysfs_wakeup:s0
