@@ -38,11 +38,11 @@ void power_profile() {
     int operatorName = stoi(op);
 
     switch (operatorName) {
-        case 94: case 140: case 141: case 142: case 146: case 148: case 149:
+        case 90: case 92: case 94: case 140: case 141: case 142: case 146: case 148: case 149:
             LOG(INFO) << "operatorName: " << operatorName;
             set_property("ro.vendor.power_profile.device", "RMX2151");
             break;
-        case 90: case 92: case 143: case 145: case 147:
+        case 143: case 145: case 147:
             LOG(INFO) << "operatorName: " << operatorName;
             set_property("ro.vendor.power_profile.device", "RMX2161");
             break;
