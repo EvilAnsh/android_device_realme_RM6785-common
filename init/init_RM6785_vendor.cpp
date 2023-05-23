@@ -1,57 +1,76 @@
 //
-// Copyright (C) 2022 The LineageOS Project
+// Copyright (C) 2022-2023 The LineageOS Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
 
+#include <android-base/file.h>
 #include <android-base/logging.h>
 #include <android-base/properties.h>
-#include <fstream>
 
-#define PROC_NFC "/proc/oppo_nfc/chipset"
-#define PROC_OPERATOR "/proc/oppoVersion/operatorName"
+constexpr const char* kProcNfcPath = "/proc/oppo_nfc/chipset";
+constexpr const char* kProcOperatorPath = "/proc/oppoVersion/operatorName";
+constexpr const char* kPropPowerProfile = "ro.vendor.power_profile.device";
+constexpr const char* kPropNfcDevice = "ro.vendor.nfc_device";
 
-void set_property(std::string prop, std::string value) {
+void set_property(const std::string& prop, const std::string& value) {
     LOG(INFO) << "Setting property: " << prop << " to " << value;
-    if (!android::base::SetProperty(prop.c_str(), value.c_str()))
+    if (!android::base::SetProperty(prop, value)) {
         LOG(ERROR) << "Unable to set: " << prop << " to " << value;
+    }
 }
 
-void nfc_detect() {
-    std::string chipset;
-    std::ifstream nfc_file(PROC_NFC);
+void detect_nfc() {
+    std::string nfc_chipset;
+    if (!android::base::ReadFileToString(kProcNfcPath, &nfc_chipset)) {
+        LOG(ERROR) << "Failed to read file: " << kProcNfcPath;
+        return;
+    }
 
-    getline(nfc_file, chipset);
-
-    LOG(INFO) << "oppo_nfc : chipset " << chipset;
-
-    if (chipset != "NULL")
-        set_property("ro.vendor.nfc_device", "1");
+    if (nfc_chipset != "NULL") {
+        set_property(kPropNfcDevice, "1");
+    }
 }
 
-void power_profile() {
-    std::string op;
-    std::ifstream operator_file(PROC_OPERATOR);
+void set_power_profile() {
+    std::string device_name, operator_content;
+    if (!android::base::ReadFileToString(kProcOperatorPath,
+                                         &operator_content)) {
+        LOG(ERROR) << "Failed to read file: " << kProcOperatorPath;
+        return;
+    }
 
-    getline(operator_file, op);
+    int operator_code = stoi(operator_content);
 
-    int operatorName = stoi(op);
-
-    switch (operatorName) {
-        case 90: case 92: case 94: case 140: case 141: case 142: case 146: case 148: case 149:
-            LOG(INFO) << "operatorName: " << operatorName;
-            set_property("ro.vendor.power_profile.device", "RMX2151");
+    switch (operator_code) {
+        case 90:
+        case 92:
+        case 94:
+        case 140:
+        case 141:
+        case 142:
+        case 146:
+        case 148:
+        case 149:
+            device_name = "RMX2151";
             break;
-        case 143: case 145: case 147:
-            LOG(INFO) << "operatorName: " << operatorName;
-            set_property("ro.vendor.power_profile.device", "RMX2161");
+        case 143:
+        case 145:
+        case 147:
+            device_name = "RMX2161";
             break;
         default:
-            LOG(INFO) << "operatorName: " << operatorName;
+            LOG(ERROR) << "Unknown operator found: " << operator_code;
+    }
+
+    if (!device_name.empty()) {
+        set_property(kPropPowerProfile, device_name);
     }
 }
 
 int main() {
-    nfc_detect();
-    power_profile();
+    detect_nfc();
+    set_power_profile();
+
+    return 0;
 }
