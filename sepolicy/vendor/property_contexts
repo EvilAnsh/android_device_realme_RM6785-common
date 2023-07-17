@@ -11,8 +11,7 @@ ro.vendor.mtk.omx.log                       u:object_r:vendor_mtk_omx_core_prop:
 ro.vendor.mtk_crossmount                    u:object_r:vendor_mtk_crossmount_prop:s0
 ro.vendor.mtk_deinterlace                   u:object_r:vendor_mtk_deinterlace_prop:s0
 
-# NFC device
-ro.vendor.nfc_device                        u:object_r:vendor_nfc_prop:s0
-
-# Power profile
-ro.vendor.power_profile.device              u:object_r:vendor_power_profile_prop:s0
+# Vendor device
+ro.vendor.device                            u:object_r:vendor_device_prop:s0
+ro.vendor.nfc_device                        u:object_r:vendor_device_prop:s0
+ro.vendor.power_profile.device              u:object_r:vendor_device_prop:s0

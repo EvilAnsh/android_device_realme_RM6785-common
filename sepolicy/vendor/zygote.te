@@ -1,1 +1,1 @@
-get_prop(zygote, vendor_power_profile_prop)
+get_prop(zygote, vendor_device_prop)

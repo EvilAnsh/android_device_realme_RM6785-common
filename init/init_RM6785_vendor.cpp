@@ -12,39 +12,55 @@ constexpr const char* kProcNfcPath = "/proc/oppo_nfc/chipset";
 constexpr const char* kProcOperatorPath = "/proc/oppoVersion/operatorName";
 constexpr const char* kPropPowerProfile = "ro.vendor.power_profile.device";
 constexpr const char* kPropNfcDevice = "ro.vendor.nfc_device";
+constexpr const char* kPropVendorDevice = "ro.vendor.device";
 
-void set_property(const std::string& prop, const std::string& value) {
+void SetProperty(const std::string& prop, const std::string& value) {
     LOG(INFO) << "Setting property: " << prop << " to " << value;
     if (!android::base::SetProperty(prop, value)) {
         LOG(ERROR) << "Unable to set: " << prop << " to " << value;
     }
 }
 
-void detect_nfc() {
-    std::string nfc_chipset;
-    if (!android::base::ReadFileToString(kProcNfcPath, &nfc_chipset)) {
+void DetectNfc() {
+    std::string nfcChipset;
+    if (!android::base::ReadFileToString(kProcNfcPath, &nfcChipset)) {
         LOG(ERROR) << "Failed to read file: " << kProcNfcPath;
         return;
     }
 
-    if (nfc_chipset != "NULL") {
-        set_property(kPropNfcDevice, "1");
+    if (nfcChipset != "NULL") {
+        SetProperty(kPropNfcDevice, "1");
     }
 }
 
-void set_power_profile() {
-    std::string device_name, operator_content;
+void SetDevice() {
+    std::string device, model, powerProfileDevice, operatorContent;
     if (!android::base::ReadFileToString(kProcOperatorPath,
-                                         &operator_content)) {
+                                         &operatorContent)) {
         LOG(ERROR) << "Failed to read file: " << kProcOperatorPath;
         return;
     }
 
-    int operator_code = stoi(operator_content);
+    int operatorCode = stoi(operatorContent);
 
-    switch (operator_code) {
-        case 90:
-        case 92:
+    switch (operatorCode) {
+        case 101:
+        case 102:
+        case 104:
+        case 105:
+        case 106:
+        case 113:
+            device = "realme 6";
+            break;
+        case 111:
+            device = "realme 6i";
+            break;
+        case 112:
+            device = "realme Narzo";
+            break;
+        case 114:
+            device = "realme 6s";
+            break;
         case 94:
         case 140:
         case 141:
@@ -52,25 +68,36 @@ void set_power_profile() {
         case 146:
         case 148:
         case 149:
-            device_name = "RMX2151";
+            device = "realme 7";
+            powerProfileDevice = "RMX2151";
+            break;
+        case 90:
+        case 92:
+            device = "realme Narzo 30";
+            powerProfileDevice = "RMX2151";
             break;
         case 143:
         case 145:
         case 147:
-            device_name = "RMX2161";
+            device = "realme Narzo 20 Pro";
+            powerProfileDevice = "RMX2161";
             break;
         default:
-            LOG(ERROR) << "Unknown operator found: " << operator_code;
+            LOG(ERROR) << "Unknown operator found: " << operatorCode;
     }
 
-    if (!device_name.empty()) {
-        set_property(kPropPowerProfile, device_name);
+    if (!device.empty()) {
+        SetProperty(kPropVendorDevice, device);
+    }
+
+    if (!powerProfileDevice.empty()) {
+        SetProperty(kPropPowerProfile, powerProfileDevice);
     }
 }
 
 int main() {
-    detect_nfc();
-    set_power_profile();
+    DetectNfc();
+    SetDevice();
 
     return 0;
 }

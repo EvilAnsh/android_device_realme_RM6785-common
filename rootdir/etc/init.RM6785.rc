@@ -60,3 +60,6 @@ service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     class hal
     user nfc
     group nfc
+
+on property:ro.vendor.device=*
+    setprop bluetooth.device.default_name ${ro.vendor.device}
