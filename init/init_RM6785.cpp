@@ -16,8 +16,8 @@
 constexpr const char* kProcOperatorPath = "/proc/oppoVersion/operatorName";
 
 struct DeviceProps {
-    std::string device;
     std::string model;
+    std::string device;
 };
 
 void property_override(const char* prop, const char* value, bool add = true) {
