@@ -5,5 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/RMX2001.mk \
-    $(LOCAL_DIR)/RMX2151.mk
+    $(LOCAL_DIR)/RMX2001L1.mk \
+    $(LOCAL_DIR)/RMX2151L1.mk
