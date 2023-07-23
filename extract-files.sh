@@ -69,6 +69,9 @@ function blob_fixup {
             sed -i "s/\x00audio.tuning.def_path/\x00ro.vendor.tuning_path/" "$2"
             sed -i "s/\x20audio.tuning.def_path/\x20ro.vendor.tuning_path/" "$2"
             ;;
+        vendor/lib/libwvhidl.so)
+            "$PATCHELF" --replace-needed "libprotobuf-cpp-lite-3.9.1.so" "libprotobuf-cpp-full-3.9.1.so" "$2"
+            ;;
     esac
 }
 
