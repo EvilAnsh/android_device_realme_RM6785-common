@@ -1747,11 +1747,13 @@ vendor/etc/virtual-spn-conf-by-imsi.xml
 framework/mediatek-ims-extension-plugin.jar
 framework/mediatek-ims-legacy.jar
 -framework/mediatek-telecom-common.jar
--framework/mediatek-telephony-base.jar
 -framework/mediatek-telephony-common.jar
 
+# Radio (IMS) - https://pastebin.com/raw/Wa3EZpPr
+-framework/mediatek-telephony-base.jar|d0f18c1c0fc4894fe31b0148cbf33387a1b0bf3d
+
 # Radio (ImsService) - https://github.com/realme-mt6785-devs/ImsService
--priv-app/ImsService/ImsService.apk|0bf3cb3afee67937e97a0ad41b2694b19c497713
+-priv-app/ImsService/ImsService.apk|88156caa5a726af075035a88624d8bf20d1b2448
 
 # Radio (Oplus)
 -odm/lib64/vendor.oplus.hardware.appradio@1.0.so
