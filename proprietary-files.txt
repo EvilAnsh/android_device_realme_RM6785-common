@@ -1059,11 +1059,6 @@ vendor/firmware/soc1_0_patch_mcu_2a_1_hdr.bin
 vendor/firmware/soc1_0_ram_bt_2a_1_hdr.bin
 vendor/firmware/soc1_0_ram_mcu_2a_1_hdr.bin
 vendor/firmware/soc1_0_ram_wifi_2a_1_hdr.bin
-vendor/firmware/soc3_0_ram_bt_1_1_hdr.bin
-vendor/firmware/soc3_0_ram_bt_1a_1_hdr.bin
-vendor/firmware/soc3_0_ram_mcu_1_1_hdr.bin
-vendor/firmware/soc3_0_ram_mcu_1a_1_hdr.bin
-vendor/firmware/soc3_0_ram_mcu_e1_hdr.bin
 
 # Dplanner
 -vendor/bin/hw/vendor.mediatek.hardware.dplanner@2.0-service
