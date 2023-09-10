@@ -792,17 +792,6 @@ vendor/firmware/soc1_0_ram_wifi_2a_1_hdr.bin
 # Connectivity (Firmware) - from A055FXXS5CXG1
 vendor/firmware/soc1_0_ram_bt_1a_1_hdr.bin:vendor/firmware/soc1_0_ram_bt_2a_1_hdr.bin|8c5d8e93ad8a03c6de5aaaad8ef58d53e75c8378
 
-# Dplanner
-vendor/bin/hw/vendor.mediatek.hardware.dplanner@2.0-service
-vendor/bin/dconfig
-vendor/bin/dexecutor
-vendor/bin/doeapp-memtester
-vendor/bin/doeapp-sat
-vendor/bin/dtc_vendor
-vendor/etc/init/vendor.mediatek.hardware.dplanner@2.0-service.rc
-vendor/etc/vintf/manifest/vendor.mediatek.hardware.dplanner@2.0-service.xml
-vendor/lib64/vendor.mediatek.hardware.dplanner@2.0.so
-
 # DRM
 odm/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
