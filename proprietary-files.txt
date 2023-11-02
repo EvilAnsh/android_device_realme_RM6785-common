@@ -1350,8 +1350,6 @@ vendor/etc/seccomp_policy/mediaswcodec.policy
 
 # Sensors
 odm/lib64/sensors.virtual.so
-vendor/bin/hw/android.hardware.sensors@2.0-service-mediatek
-vendor/etc/init/android.hardware.sensors@2.0-service-mediatek.rc
 vendor/lib/libhwm.so
 vendor/lib64/hw/sensors.mt6785.so
 vendor/lib64/libakm.so
