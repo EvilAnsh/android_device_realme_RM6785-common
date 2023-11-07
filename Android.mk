@@ -11,6 +11,4 @@ ifeq ($(TARGET_DEVICE),RM6785)
   $(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))
 
 include $(CLEAR_VARS)
-include external/wpa_supplicant_8/hostapd/Android.mk
-
 endif
