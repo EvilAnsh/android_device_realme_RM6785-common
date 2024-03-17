@@ -10,6 +10,9 @@
 /dev/pn553                                 u:object_r:nfc_device:s0
 /dev/m_virtual_sensor_misc(/.*)?           u:object_r:virtual_sensor_device:s0
 
+# Latency
+/dev/cpu_dma_latency                       u:object_r:latency_device:s0
+
 # Persist files
 /mnt/vendor/persist/camera(/.*)?           u:object_r:vendor_persist_camera_file:s0
 
