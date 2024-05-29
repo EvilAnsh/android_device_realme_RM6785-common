@@ -108,6 +108,9 @@ ro.lmk.thrashing_limit=30
 ro.lmk.thrashing_limit_decay=50
 ro.lmk.swap_util_max=90
 
+# Power HAL
+vendor.powerhal.disp.idle_support=false
+
 # MTK
 ro.vendor.mediatek.platform=MT6785
 
