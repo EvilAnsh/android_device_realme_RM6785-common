@@ -26,6 +26,9 @@ function blob_fixup {
         product/etc/permissions/com.android.hotwordenrollment.common.util.xml)
             sed -i 's/my_product/product/' "$2"
             ;;
+        system_ext/lib64/libsource.so)
+            grep -q libshim_ui.so "$2" || "$PATCHELF" --add-needed libshim_ui.so "$2"
+            ;;
         vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc)
             sed -i '/vts/Q' "$2"
             ;;
