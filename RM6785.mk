@@ -341,6 +341,9 @@ PRODUCT_PACKAGES += \
     libutils-v30 \
     libui-v32
 
+PRODUCT_PACKAGES += \
+    libshim_ui
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     TetheringConfigOverlayRM6785 \
