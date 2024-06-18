@@ -153,6 +153,6 @@ WIFI_DRIVER_STATE_OFF := "0"
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
-ifneq ($(LINEAGE_BUILD),)
+ifneq ($(wildcard  vendor/lineage/.),)
 -include $(DEVICE_PATH)/BoardConfigLineage.mk
 endif

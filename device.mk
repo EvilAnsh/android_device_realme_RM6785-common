@@ -344,6 +344,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
     $(LOCAL_PATH)/configs/wifi/wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/wifi.cfg
 
-ifneq ($(LINEAGE_BUILD),)
+ifneq ($(wildcard  vendor/lineage/.),)
 $(call inherit-product-if-exists, $(LOCAL_PATH)/RM6785_lineage.mk)
 endif
