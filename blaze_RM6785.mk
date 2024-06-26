@@ -32,3 +32,6 @@ TARGET_INCLUDE_LIVE_WALLPAPERS := true
 
 # GMS
 WITH_GAPPS := true
+
+# Build Signer
+$(call inherit-product-if-exists, vendor/extra/product.mk)
