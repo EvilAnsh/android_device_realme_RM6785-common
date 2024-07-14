@@ -76,7 +76,6 @@ ro.vendor.mtk_log_hide_gps=1
 # Graphics
 debug.mediatek.disp_decompress=1
 debug.sf.auto_latch_unsignaled=0
-debug.sf.latch_unsignaled=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.disable_client_composition_cache=1
 debug.sf.predict_hwc_composition_strategy=0
