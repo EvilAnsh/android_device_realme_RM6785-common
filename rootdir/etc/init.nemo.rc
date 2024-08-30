@@ -1,5 +1,6 @@
 on init
     # Update fastcharge firmware
+    chown system system /proc/fastchg_fw_update
     write /proc/fastchg_fw_update 1
 
 on early-boot
@@ -23,9 +24,46 @@ on post-fs-data
     mkdir /data/vendor/audiohal 0771 system audio
     mkdir /data/vendor/audiohal/audio_param 0771 system audio
 
+    # Vibrator
+    write /sys/class/leds/vibrator/ram_update 1
+
 on boot
     # Power HAL
     setprop vendor.powerhal.init 1
+
+    # Touchpanel
+    chown system system /proc/touchpanel/tp_fw_update
+    chown system system /proc/touchpanel/oplus_tp_limit_enable
+    chown system system /proc/touchpanel/oplus_tp_direction
+    chown system system /proc/touchpanel/double_tap_enable
+    chown system system /proc/touchpanel/coordinate
+    chown system system /proc/touchpanel/game_switch_enable
+    chown system system /proc/touchpanel/fp_enable
+    chown system system /proc/touchpanel/baseline_test
+    chown system system /proc/touchpanel/kernel_grip_handle
+    chown system system /proc/touchpanel/curved_size
+    chown system system /proc/touchpanel/charge_detect
+    chown system system /proc/touchpanel/wireless_charge_detect
+
+    # tfa98xx firmware update
+    write /proc/tfa98xx/oppo_tfa98xx_fw_update 1
+    chown system system /proc/tfa98xx/oppo_tfa98xx_fw_update
+
+    # Power Supply
+    chown system system /sys/class/power_supply/battery/ship_mode
+    chown system system /sys/class/power_supply/battery/short_c_batt_in_idle
+    chown system system /sys/class/power_supply/battery/short_c_batt_update_change
+    chown system system /sys/class/power_supply/battery/short_c_hw_feature
+    chown system system /sys/class/power_supply/battery/short_ic_volt_thresh
+    chown system system /sys/class/power_supply/battery/short_ic_otp_status
+    chown system system /sys/class/power_supply/battery/short_c_batt_limit_chg
+    chown system system /sys/class/power_supply/battery/short_c_batt_limit_rechg
+    chown system system /sys/class/power_supply/battery/mmi_charging_enable
+    chown system system /sys/class/power_supply/battery/cool_down
+    chown system system /sys/class/power_supply/battery/em_mode
+    chown system system /sys/class/power_supply/usb/water_detect_feature
+
+    chown system system /proc/tbatt_pwroff
 
 on property:sys.boot_completed=1
     # ZRAM
