@@ -69,6 +69,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     android.hardware.drm@1.3.vendor:32 \
+    libcrypto_shim \
     libdrm.vendor \
     libmockdrmcryptoplugin
 
