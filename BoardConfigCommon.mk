@@ -99,6 +99,7 @@ BOARD_MAIN_SIZE := 6975127552 # ( BOARD_SUPER_PARTITION_SIZE - 4MB )
 BOARD_MAIN_PARTITION_LIST := system product vendor odm system_ext
 
 # Properties
+TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
