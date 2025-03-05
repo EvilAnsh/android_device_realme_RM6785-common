@@ -2,6 +2,11 @@ on init
     # Update fastcharge firmware
     write /proc/fastchg_fw_update 1
 
+on early-boot
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
+
 on fs
     mount_all /vendor/etc/fstab.mt6785 --early
     mount_all /vendor/etc/fstab.mt6785 --late
