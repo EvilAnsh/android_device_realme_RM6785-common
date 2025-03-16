@@ -288,6 +288,7 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
+    libbase_shim \
     libui-v32
 
 # Vibrator
