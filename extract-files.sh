@@ -48,6 +48,10 @@ function blob_fixup {
             # evaluateCaptureConfiguration()
             sed -i "s/\x34\xE8\x87\x40\xB9/\x34\x28\x02\x80\x52/" "$2"
             ;;
+        vendor/lib64/libutils-v30.so)
+            [ "$2" = "" ] && return 0
+            grep -q "libprocessgroup_shim.so" "${2}" || "${PATCHELF}" --add-needed "libprocessgroup_shim.so" "${2}"
+            ;;
         vendor/lib64/hw/dfps.mt6785.so |\
         vendor/lib64/hw/vendor.mediatek.hardware.pq@2.6-impl.so)
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
