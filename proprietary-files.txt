@@ -1913,7 +1913,7 @@ vendor/firmware/gt9886_firmware_6785ae.bin
 vendor/etc/default_pd_calibration.bin
 
 # VNDK
-system/lib64/libutils.so:vendor/lib64/libutils-v30.so
+system/lib64/libutils.so:vendor/lib64/libutils-v30.so;FIX_SONAME
 
 # Vooc (Firmware)
 odm/firmware/fastchg/19661/oplus_vooc_fw.bin
