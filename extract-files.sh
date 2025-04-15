@@ -53,7 +53,8 @@ function blob_fixup {
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             ;;
         vendor/lib/hw/audio.primary.mt6785.so)
-            "$PATCHELF" --replace-needed "libmedia_helper.so" "libmedia_helper-v30.so" "$2"
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --add-needed "libshim_audio.so" "${2}"
             "$PATCHELF" --replace-needed "libalsautils.so" "libalsautils-v30.so" "$2"
             ;;
         vendor/lib/hw/audio.usb.mt6785.so)
