@@ -63,9 +63,6 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 drm.service.enabled=true
 ro.netflix.bsp_rev=MTK6785-18787-1
 
-# FRP
-ro.frp.pst=/dev/block/platform/bootdevice/by-name/frp
-
 # GPS
 ro.oppo.mtk_gps_mpe=1
 ro.vendor.mtk_log_hide_gps=1
