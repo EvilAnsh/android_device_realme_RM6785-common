@@ -29,6 +29,10 @@ function blob_fixup {
         system_ext/lib64/libsource.so)
             grep -q libui_shim.so "$2" || "$PATCHELF" --add-needed libui_shim.so "$2"
             ;;
+        system_ext/lib64/libimsma.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libsink.so" "libsink-mtk.so" "${2}"
+            ;;
         vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron)
              [ "$2" = "" ] && return 0
              grep -q "libbase_shim.so" "${2}" || "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
