@@ -37,6 +37,10 @@ function blob_fixup {
              [ "$2" = "" ] && return 0
              grep -q "libbase_shim.so" "${2}" || "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
              ;;
+        vendor/bin/hw/mtkfusionrild)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --add-needed "libutils-v32.so" "${2}"
+            ;;
         vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc)
             sed -i '/vts/Q' "$2"
             ;;
