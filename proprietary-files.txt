@@ -1324,24 +1324,26 @@ odm/lib64/vendor.oplus.hardware.radio@1.0.so
 vendor/etc/vintf/manifest/oplus_appradio_device_manifest.xml
 vendor/etc/vintf/manifest/oplus_radio_device_manifest.xml
 
-# Radio (Video Telephony) - from TECNO-U-64-ARMV82-230626V601DevT
-system_ext/bin/vtservice|59adc81ee1ad1f3fb4942cd6e8e7100325002eb2
+# Radio (Video Telephony) - from rothko OS3.0.4.0.WNNEUXM
+system_ext/bin/vtservice|4a8759f67cc4f238983c57193d88d1cc13956e06
 system_ext/etc/init/init.vtservice.rc|50a2249906edc06059b443513db47a2ddc0490dc
-system_ext/lib64/libcomutils.so|6d9cd979f33ef01cb26861a38a59e76e1c2a3acb
-system_ext/lib64/libimsma.so|5cb9045db2dfa551c810cf3e96e728a17238c657
-system_ext/lib64/libimsma_adapt.so|754ad1c39fb4dba9d3eb69ac00112e7600d68580
-system_ext/lib64/libimsma_rtp.so|20ee91f090661fb26e6625ad2fef828441956b82
-system_ext/lib64/libimsma_socketwrapper.so|1f9b83322c41e5b0a7b3130f74a38ddb14f578d8
-system_ext/lib64/libmtk_vt_service.so|302d3ab3c5b3fa0107520fe36098b32cd0a8dd96
-system_ext/lib64/libmtk_vt_wrapper.so|af4d486c516c920ea99c362aebbf04180e96035c
-system_ext/lib64/libsignal.so|0f55bb64c660fe4cda2b695121580b054f026e73
-system_ext/lib64/libsink.so:system_ext/lib64/libsink-mtk.so;FIX_SONAME|eeed08b904105e424b4662d82ba107103f5452b9
-system_ext/lib64/libsource.so|c4fa65eea73987da6d279fe89b8fec23ad2c0bf1|a9f4156f17c1e403ddf5e1cc602c88a034dc483b
-system_ext/lib64/libvcodec_cap.so|6973253cb2e4ddf365451ed2ac8db9d04085bc4a
-system_ext/lib64/libvcodec_capenc.so|5527525dfcd25169bc380ac53d8181ffa1429c6f
-system_ext/lib64/libvt_avsync.so|632cb05532ef2e022072d91bff3c1ae47c888b7e
-system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so|fc3f645734d4e37fa50b77233d63c7b2eb166014
-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|aee568e770a3835af2df2262c9dc8bb2911da324
+system_ext/lib64/libcomutils.so|05cdfb5eb128b670ec182235e75efeec2dd21773
+system_ext/lib64/libimsma.so|ecc97c137cd7ef1427a64155ddaf8901db1378a9|cf108c7c9658041aa93c89b4ea2cee96901a2b85
+system_ext/lib64/libimsma_adapt.so|2d19ab68fa39b9f4eb24be744ae18ca98f70b767
+system_ext/lib64/libimsma_rtp.so|c48cf35f2cf73e92841fe39d2e0c7d816b505ad0
+system_ext/lib64/libimsma_socketwrapper.so|aaa678a3fe154066bd47c9ed67105a7b941b7cf9
+system_ext/lib64/libmtk_vt_service.so|ce17fe8d78fec13ddbfa8e6bbcb9a25366026c1b
+system_ext/lib64/libmtk_vt_wrapper.so|a06c3ee31bc95393e1ee8f682698ba64e09bcad0
+system_ext/lib64/libsignal.so|38ab61c18cedce065ff16cbc71dbdf15681538f3
+system_ext/lib64/libsink.so:system_ext/lib64/libsink-mtk.so;FIX_SONAME|6ffa9c82ee71ce06b71e43d5c9b0bf0a9794ccf7|cd2ba9081f3d72f65a2ab5bfe3f9fbd15f2edcf0
+system_ext/lib64/libsource.so|6e3a9c7bde97aa6e8739caa50b6d828591cd1d98
+system_ext/lib64/libvcodec_cap.so|57490ed96a72df49fdf7204e2c0db03aa12b439e
+system_ext/lib64/libvcodec_capenc.so|013f0131a424f8c2fc3815b02e466bc03a197324
+system_ext/lib64/libvt_avsync.so|548242bff6b4472f212bf18cdec7753088885a10
+system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so|8b13966bdf703d2eae99d4f65a2e77fbd939064c
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|01b68c7597d585ec39441628f66b02b3b091db99
+
+# Radio (Video Telephony) - from TECNO-CK9n UP1A.230519.001
 vendor/bin/hw/vtservice_hidl|047b26f80b338b7d0869840d243eefebe82d56f5
 vendor/etc/init/init.vtservice_hidl.rc|f2e992214ed5bb99c2c2a135cf1f0996dba8a8a0
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so|bb9ff554802e7bffb72cf24604109dafcf0019fc
