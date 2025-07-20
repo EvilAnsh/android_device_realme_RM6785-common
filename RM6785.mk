@@ -309,7 +309,7 @@ PRODUCT_PACKAGES += \
     libwifi-hal-wrapper \
     hostapd \
     wpa_supplicant \
-    android.hardware.wifi-service-lazy
+    android.hardware.wifi-service
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg \
