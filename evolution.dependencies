@@ -1,0 +1,24 @@
+[
+  {
+    "repository"  : "vendor_realme_nemo",
+    "branch"      : "bka",
+    "target_path" : "vendor/realme/nemo"
+  },
+  {
+    "remote"      : "github-non-los",
+    "repository"  : "crdroidandroid/android_hardware_mediatek",
+    "branch"      : "15.0",
+    "target_path" : "hardware/mediatek"
+  },
+  {
+    "repository"  : "kernel_realme_nemo",
+    "branch"      : "bka",
+    "target_path" : "kernel/realme/nemo"
+  },
+  {
+    "remote"      : "github-non-los",
+    "repository"  : "crdroidandroid/android_device_mediatek_sepolicy_vndr",
+    "branch"      : "16.0",
+    "target_path" : "device/mediatek/sepolicy_vndr"
+  }
+]

@@ -1,4 +1,4 @@
 runtime_resource_overlay {
-    name: "SettingsOverlayRM6785",
+    name: "TetheringConfigOverlayNemo",
     vendor: true
 }

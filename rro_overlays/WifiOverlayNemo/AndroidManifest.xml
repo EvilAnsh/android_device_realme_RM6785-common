@@ -4,7 +4,7 @@
 -->
 <!-- Pixel specific wifi overlays -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.wifi.resources.RM6785">
+    package="com.android.wifi.resources.nemo">
     <overlay
       android:targetPackage="com.android.wifi.resources"
       android:targetName="WifiCustomization"

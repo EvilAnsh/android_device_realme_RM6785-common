@@ -1,0 +1,9 @@
+type init_nemo, domain;
+type init_nemo_exec, vendor_file_type, exec_type, file_type;
+
+init_daemon_domain(init_nemo)
+
+set_prop(init_nemo, vendor_device_prop)
+
+allow init_nemo proc_nfc_chipset:file r_file_perms;
+allow init_nemo proc_oppo_operator:file r_file_perms;

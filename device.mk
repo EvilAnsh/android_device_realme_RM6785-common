@@ -5,7 +5,7 @@
 #
 
 # Call proprietary blob setup
-$(call inherit-product, vendor/realme/RM6785-common/RM6785-common-vendor.mk)
+$(call inherit-product, vendor/realme/nemo/nemo-vendor.mk)
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
@@ -64,7 +64,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.RM6785
+    android.hardware.biometrics.fingerprint@2.1-service.nemo
 
 # FM Radio
 PRODUCT_PACKAGES += \
@@ -96,14 +96,14 @@ PRODUCT_PACKAGES += \
     init.mt6785.usb.rc \
     init.project.rc \
     init.sensor_1_0.rc \
-    init.RM6785.rc \
+    init.nemo.rc \
     ueventd.mtk.rc \
-    ueventd.RM6785.rc
+    ueventd.nemo.rc
 
 PRODUCT_PACKAGES += \
-    init_RM6785_vendor
+    init_nemo_vendor
 
-$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_RM6785)
+$(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):libinit_nemo)
 
 # Kernel
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
@@ -119,7 +119,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.RM6785
+    android.hardware.light-service.nemo
 
 # Lineage Health
 PRODUCT_PACKAGES += \
@@ -159,7 +159,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     FrameworksOverlayRMX2151 \
     FrameworksOverlayRMX2161 \
-    SettingsOverlayRM6785 \
+    SettingsOverlayNemo \
     SettingsProviderOverlay6 \
     SettingsProviderOverlay6i \
     SettingsProviderOverlay6s \
@@ -285,7 +285,7 @@ PRODUCT_COPY_FILES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch-service.RM6785
+    vendor.lineage.touch-service.nemo
 
 # Update
 AB_OTA_UPDATER := false
@@ -306,8 +306,8 @@ PRODUCT_PACKAGES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    TetheringConfigOverlayRM6785 \
-    WifiOverlayRM6785 \
+    TetheringConfigOverlayNemo \
+    WifiOverlayNemo \
     libwifi-hal-wrapper \
     hostapd \
     wpa_supplicant \

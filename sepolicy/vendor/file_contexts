@@ -1,8 +1,8 @@
 # HALs
 /(vendor|odm)/bin/hw/vendor\.oplus\.hardware\.biometrics\.fingerprint@[0-9]\.[0-9]-service                u:object_r:hal_fingerprint_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@[0-9]\.[0-9]-service\.RM6785    u:object_r:hal_fingerprint_default_exec:s0
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light-service.RM6785                                    u:object_r:hal_light_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch-service\.RM6785                                     u:object_r:hal_lineage_touch_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@[0-9]\.[0-9]-service\.nemo    u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light-service.nemo                                    u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch-service\.nemo                                     u:object_r:hal_lineage_touch_default_exec:s0
 
 # Devices
 /dev/pn553                                 u:object_r:nfc_device:s0
@@ -18,4 +18,4 @@
 /data/vendor/fingerprint/gf_data(/.*)?     u:object_r:fingerprint_vendor_data_file:s0
 
 # Init services
-/(vendor|system/vendor)/bin/init_RM6785_vendor   u:object_r:init_RM6785_exec:s0
+/(vendor|system/vendor)/bin/init_nemo_vendor   u:object_r:init_nemo_exec:s0
