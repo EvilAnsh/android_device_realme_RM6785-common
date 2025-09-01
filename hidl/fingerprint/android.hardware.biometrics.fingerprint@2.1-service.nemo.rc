@@ -1,4 +1,4 @@
-service vendor.fps_hal.mt6785 /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.RM6785
+service vendor.fps_hal.mt6785 /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.nemo
     # "class hal" causes a race condition on some devices due to files created
     # in /data. As a workaround, postpone startup until later in boot once
     # /data is mounted.

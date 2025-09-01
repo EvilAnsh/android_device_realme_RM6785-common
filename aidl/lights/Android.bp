@@ -4,9 +4,9 @@
 // SPDX-License-Identifier: Apache-2.0
 
 cc_binary {
-    name: "android.hardware.light-service.RM6785",
-    init_rc: ["android.hardware.light-service.RM6785.rc"],
-    vintf_fragments: ["android.hardware.light-service.RM6785.xml"],
+    name: "android.hardware.light-service.nemo",
+    init_rc: ["android.hardware.light-service.nemo.rc"],
+    vintf_fragments: ["android.hardware.light-service.nemo.xml"],
     relative_install_path: "hw",
     srcs: [
         "main.cpp",

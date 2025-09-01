@@ -67,8 +67,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.RM6785.rc",
-    src: "etc/init.RM6785.rc",
+    name: "init.nemo.rc",
+    src: "etc/init.nemo.rc",
     relative_install_path: "init",
     vendor: true,
 }
@@ -81,8 +81,8 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "ueventd.RM6785.rc",
-    src: "etc/ueventd.RM6785.rc",
+    name: "ueventd.nemo.rc",
+    src: "etc/ueventd.nemo.rc",
     filename: "ueventd.rc",
     device_specific: true,
 }

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "vendor.lineage.touch-service.RM6785"
+#define LOG_TAG "vendor.lineage.touch-service.nemo"
 
 #include <android-base/logging.h>
 #include <android/binder_manager.h>

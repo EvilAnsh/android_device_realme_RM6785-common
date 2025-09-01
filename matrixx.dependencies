@@ -1,0 +1,26 @@
+[
+  {
+    "remote"      : "crdroid",
+    "repository"  : "crdroidandroid/proprietary_vendor_realme_nemo",
+    "branch"      : "15.0",
+    "target_path" : "vendor/realme/nemo"
+  },
+  {
+    "remote"      : "crdroid",
+    "repository"  : "crdroidandroid/android_hardware_mediatek",
+    "branch"      : "15.0",
+    "target_path" : "hardware/mediatek"
+  },
+  {
+    "remote"      : "crdroid",
+    "repository"  : "crdroidandroid/android_kernel_realme_nemo",
+    "branch"      : "15.0",
+    "target_path" : "kernel/realme/mt6785"
+  },
+  {
+    "remote"      : "crdroid",
+    "repository"  : "crdroidandroid/android_device_mediatek_sepolicy_vndr",
+    "branch"      : "15.0",
+    "target_path" : "device/mediatek/sepolicy_vndr"
+  }
+]

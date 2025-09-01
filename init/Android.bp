@@ -3,22 +3,22 @@
 // SPDX-License-Identifier: Apache-2.0
 
 cc_library_static {
-    name: "libinit_RM6785",
+    name: "libinit_nemo",
     recovery_available: true,
     whole_static_libs: ["libbase"],
     header_libs: [
         "libbase_headers",
     ],
-    srcs: ["init_RM6785.cpp"],
+    srcs: ["init_nemo.cpp"],
     include_dirs: [
         "system/core/init"
     ]
 }
 
 cc_binary {
-    name: "init_RM6785_vendor",
-    init_rc: ["init_RM6785_vendor.rc"],
-    srcs: ["init_RM6785_vendor.cpp"],
+    name: "init_nemo_vendor",
+    init_rc: ["init_nemo_vendor.rc"],
+    srcs: ["init_nemo_vendor.cpp"],
     shared_libs: ["libbase"],
     vendor: true,
 }

@@ -1,4 +1,4 @@
-service vendor.light-hal-2-0.RM6785 /vendor/bin/hw/android.hardware.light-service.RM6785
+service vendor.light-hal-2-0.nemo /vendor/bin/hw/android.hardware.light-service.nemo
     class hal
     user system
     group system

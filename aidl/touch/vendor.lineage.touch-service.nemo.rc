@@ -24,7 +24,7 @@ on boot
     chown system system /proc/touchpanel/up_arrow_enable
     chown system system /proc/touchpanel/up_swipe_enable
 
-service vendor.touch-hal /vendor/bin/hw/vendor.lineage.touch-service.RM6785
+service vendor.touch-hal /vendor/bin/hw/vendor.lineage.touch-service.nemo
     class hal
     user system
     group system

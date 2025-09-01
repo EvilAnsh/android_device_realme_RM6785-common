@@ -3,8 +3,8 @@
  *
  * SPDX-License-Identifier: Apache-2.0
  */
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.RM6785"
-#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service.RM6785"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.nemo"
+#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service.nemo"
 
 #include <hardware/hardware.h>
 #include <hardware/fingerprint.h>
