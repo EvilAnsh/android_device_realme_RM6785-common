@@ -43,6 +43,7 @@ TARGET_SCREEN_DENSITY := 420
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
+BOARD_KERNEL_CMDLINE += androidboot.serialconsole=0
 TARGET_KERNEL_SOURCE := kernel/realme/nemo
 TARGET_KERNEL_CONFIG := nemo_defconfig
 TARGET_KERNEL_NO_GCC := true
