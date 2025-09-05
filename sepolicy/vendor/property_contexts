@@ -14,4 +14,3 @@ ro.vendor.mtk_deinterlace                   u:object_r:vendor_mtk_deinterlace_pr
 # Vendor device
 ro.vendor.device                            u:object_r:vendor_device_prop:s0
 ro.vendor.nfc_device                        u:object_r:vendor_device_prop:s0
-ro.vendor.power_profile.device              u:object_r:vendor_device_prop:s0

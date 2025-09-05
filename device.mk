@@ -157,16 +157,11 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
-    FrameworksOverlayRMX2151 \
-    FrameworksOverlayRMX2161 \
     SettingsOverlayNemo \
     SettingsProviderOverlay6 \
     SettingsProviderOverlay6i \
     SettingsProviderOverlay6s \
-    SettingsProviderOverlay7 \
-    SettingsProviderOverlayNarzo \
-    SettingsProviderOverlayNarzo20Pro \
-    SettingsProviderOverlayNarzo30
+    SettingsProviderOverlayNarzo
 
 # RRO (Runtime Resource Overlay)
 PRODUCT_ENFORCE_RRO_TARGETS += *

@@ -79,33 +79,6 @@ DeviceProps get_device() {
         case 114:
             device_props = {"RMX2002", "RMX2002L1"};
             break;
-        // realme 7
-        case 140:
-        case 141:
-        case 146:
-        case 149:
-            device_props = {"RMX2151", "RMX2151L1"};
-            break;
-        case 142:
-            device_props = {"RMX2153", "RMX2153L1"};
-            break;
-        case 94:
-        case 148:
-            device_props = {"RMX2155", "RMX2155L1"};
-            break;
-        // realme Narzo 30 4G
-        case 90:
-        case 92:
-            device_props = {"RMX2156", "RMX2156L1"};
-            break;
-        // realme Narzo 20 Pro
-        case 143:
-            device_props = {"RMX2161", "RMX2161L1"};
-            break;
-        case 145:
-        case 147:
-            device_props = {"RMX2163", "RMX2163L1"};
-            break;
         default:
             LOG(ERROR) << "Unknown operator found: " << operator_code;
             device_props = {"", ""};

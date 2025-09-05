@@ -1561,26 +1561,6 @@ odm/firmware/tp/19661/FW_NT36672C_NF_TIANMA_FAE.bin
 odm/firmware/tp/19661/FW_NT36672C_NF_TIANMA_TEST.bin
 odm/firmware/tp/19661/LIMIT_NT36672C_NF_JDI.img
 odm/firmware/tp/19661/LIMIT_NT36672C_NF_TIANMA.img
-odm/firmware/tp/20682/FW_GT9886_SAMSUNG.img
-odm/firmware/tp/20682/FW_GT9886_SAMSUNG_FAE.img
-odm/firmware/tp/20682/FW_NT36672C_NF_BOE.bin
-odm/firmware/tp/20682/FW_NT36672C_NF_BOE_FAE.bin
-odm/firmware/tp/20682/FW_NT36672C_NF_BOE_TEST.bin
-odm/firmware/tp/20682/FW_NT36672C_NF_JDI.bin
-odm/firmware/tp/20682/FW_NT36672C_NF_JDI_FAE.bin
-odm/firmware/tp/20682/FW_NT36672C_NF_JDI_TEST.bin
-odm/firmware/tp/20682/FW_NT36672C_NF_TIANMA.bin
-odm/firmware/tp/20682/FW_NT36672C_NF_TIANMA_FAE.bin
-odm/firmware/tp/20682/FW_NT36672C_NF_TIANMA_TEST.bin
-odm/firmware/tp/20682/LIMIT_GT9886_SAMSUNG.img
-odm/firmware/tp/20682/LIMIT_NT36672C_NF_BOE.img
-odm/firmware/tp/20682/LIMIT_NT36672C_NF_JDI.img
-odm/firmware/tp/20682/LIMIT_NT36672C_NF_TIANMA.img
-vendor/firmware/gt1151_default_firmware2.img
-vendor/firmware/gt9886_cfg_6785v96.bin
-vendor/firmware/gt9886_cfg_6785v99.bin
-vendor/firmware/gt9886_firmware_6785a4.bin
-vendor/firmware/gt9886_firmware_6785ae.bin
 
 # UDF (Userspace debugging framework) - from RMX2151_11_F.01
 -vendor/lib64/libudf.so|66324571c3f69057b250bce3b0d58c386da0c25b
@@ -1593,7 +1573,6 @@ system/lib64/libutils.so:vendor/lib64/libutils-v30.so;FIX_SONAME
 
 # Vooc (Firmware)
 odm/firmware/fastchg/19661/oplus_vooc_fw.bin
-odm/firmware/fastchg/20682/oplus_vooc_fw.bin
 
 # Wifi
 -vendor/bin/stp_dump3
