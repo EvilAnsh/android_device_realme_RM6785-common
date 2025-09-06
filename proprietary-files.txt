@@ -164,9 +164,7 @@ odm/etc/audio/sixth/sixth_param_phonecall.txt
 odm/etc/audio/sixth/sixth_param_voip.txt
 odm/etc/audio/test_path/common/mixer_paths.xml
 odm/etc/audio/test_path/mixer_paths.xml
-odm/etc/audio/file112.wav
 odm/etc/audio/oplus_audio_features.xml
-odm/etc/audio/spk.wav
 vendor/etc/audio_param/AudioParamOptions.xml
 vendor/etc/audio_param/BtInfo_AudioParam.xml
 vendor/etc/audio_param/BtInfo_ParamUnitDesc.xml
@@ -273,8 +271,6 @@ vendor/etc/audio_policy.conf
 vendor/etc/audio_policy_volumes.xml
 vendor/etc/aurisys_config.xml
 vendor/etc/aurisys_config_hifi3.xml
-vendor/etc/file112.wav
-vendor/etc/spk.wav
 
 # Audio (Firmware)
 odm/firmware/aw87339/aw87339_abrcv.bin
