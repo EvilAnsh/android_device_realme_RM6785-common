@@ -913,12 +913,12 @@ vendor/etc/vintf/manifest/vendor.mediatek.hardware.dplanner@2.0-service.xml
 -odm/lib64/liboemcrypto.so
 -vendor/lib64/libtlcWidevineModularDrm.so
 
-# DRM - from RMX2156_11_F.17
+# DRM - from RMX2156_11_F.19
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine|8307cea32c20bdc6e7456a6060ebefcfe743b02c
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc|992f63e9700da29099e0590858a6becaaadb2976
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml|91d7c0996133556cb7f7c5d1b7e5d9e7f07b78b2
-vendor/lib64/mediadrm/libwvdrmengine.so|39cd63ebaea119805c6f713ed95907a92c40aa4d
-vendor/lib64/libwvhidl.so|9b7adc58292883e03f4b5fe00842c6832a506680
+vendor/lib64/mediadrm/libwvdrmengine.so|1dedfe8e923e1e472c278e46aca2c80a14da3bf8
+vendor/lib64/libwvhidl.so|51b3fa3b6af39750785214201e0e6be56cd69cc0
 
 # Dynamic FPS
 -vendor/bin/hw/vendor.mediatek.hardware.dfps@1.0-service
@@ -1049,12 +1049,12 @@ vendor/lib/egl/egl.cfg
 -vendor/lib64/libscltm.so
 -vendor/lib64/vendor.mediatek.hardware.gpu@1.0.so
 
-# Graphics - from RMX2151_11_F.01
+# Graphics - from RMX2156_11_F.19
 -vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek|b6fa0dedf2f63d1e50f5971d8ce0d08ac879e262
--vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so|9f896ca7b981834be9e1a1116c971394f95ece07
--vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so|30bc6b9fd5abe37f1c0b265b7448441776ee8f13
--vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so|20290857ee049b423dd1a8e493bf85a8653c4fea
--vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so|54b3be407037e4ac1f64c51ba4d0b96aba75d393
+-vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so|a09d2f7cf827edd7247fc3f1b73a5e40747388bf
+-vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so|cebed9f12112690d894ddf3a4ee7c440a17c3227
+-vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so|4c8220fef2f7e30955b65747e615354ce09d9104
+-vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so|cca87510004f573333f164cc0e1e31ef990b7761
 
 # Keyinstall
 -vendor/bin/hw/vendor.mediatek.hardware.keyinstall@1.0-service
@@ -1558,7 +1558,7 @@ odm/firmware/tp/19661/FW_NT36672C_NF_TIANMA_TEST.bin
 odm/firmware/tp/19661/LIMIT_NT36672C_NF_JDI.img
 odm/firmware/tp/19661/LIMIT_NT36672C_NF_TIANMA.img
 
-# UDF (Userspace debugging framework) - from RMX2151_11_F.01
+# UDF (Userspace debugging framework) - from RMX2156_11_F.19
 -vendor/lib64/libudf.so|66324571c3f69057b250bce3b0d58c386da0c25b
 
 # USB
