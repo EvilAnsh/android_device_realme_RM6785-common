@@ -5,9 +5,8 @@
     "target_path" : "vendor/realme/nemo"
   },
   {
-    "remote"      : "github-non-los",
-    "repository"  : "crdroidandroid/android_hardware_mediatek",
-    "branch"      : "15.0",
+    "repository"  : "hardware_mediatek",
+    "branch"      : "bka",
     "target_path" : "hardware/mediatek"
   },
   {
@@ -16,9 +15,13 @@
     "target_path" : "kernel/realme/nemo"
   },
   {
-    "remote"      : "github-non-los",
-    "repository"  : "crdroidandroid/android_device_mediatek_sepolicy_vndr",
-    "branch"      : "16.0",
+    "repository"  : "device_mediatek_sepolicy_vndr",
+    "branch"      : "bka",
     "target_path" : "device/mediatek/sepolicy_vndr"
+  },
+  {
+    "repository"  : "hardware_dolby",
+    "branch"      : "bka",
+    "target_path" : "hardware/dolby"
   }
 ]

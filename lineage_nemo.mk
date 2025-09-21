@@ -23,6 +23,7 @@ PRODUCT_DEVICE := nemo
 PRODUCT_MANUFACTURER := realme
 
 # Evolution specific flags
+EVO_BUILD_TYPE := Official
 TARGET_BUILD_APERTURE_CAMERA := false
 WITH_GMS := true
 
