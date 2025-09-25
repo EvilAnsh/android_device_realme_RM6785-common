@@ -6,5 +6,5 @@
     package="org.lineageos.aperture.overlay.nemo">
     <overlay android:targetPackage="org.lineageos.aperture"
                    android:isStatic="true"
-                   android:priority="700"/>
+                   android:priority="100"/>
 </manifest>
