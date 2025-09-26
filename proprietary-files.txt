@@ -299,8 +299,8 @@ vendor/lib64/libbt-vendor.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 
 # Bluetooth (aptX)
-lib64/libaptXHD_encoder.so
-lib64/libaptX_encoder.so
+system/lib64/libaptXHD_encoder.so
+system/lib64/libaptX_encoder.so
 
 # Bluetooth (Firmware)
 vendor/firmware/BT_FW.cfg
@@ -1406,20 +1406,20 @@ vendor/etc/virtual-spn-conf-by-efspn.xml
 vendor/etc/virtual-spn-conf-by-imsi.xml
 
 # Radio (IMS)
-framework/mediatek-common.jar
-framework/mediatek-framework.jar
-framework/mediatek-ims-base.jar
-framework/mediatek-ims-common.jar
-framework/mediatek-ims-extension-plugin.jar
-framework/mediatek-ims-legacy.jar
-framework/mediatek-telecom-common.jar
-framework/mediatek-telephony-common.jar
+system/framework/mediatek-common.jar
+system/framework/mediatek-framework.jar
+system/framework/mediatek-ims-base.jar
+system/framework/mediatek-ims-common.jar
+system/framework/mediatek-ims-extension-plugin.jar
+system/framework/mediatek-ims-legacy.jar
+system/framework/mediatek-telecom-common.jar
+system/framework/mediatek-telephony-common.jar
 
 # Radio (IMS) - https://pastebin.com/raw/Wa3EZpPr
-framework/mediatek-telephony-base.jar|d0f18c1c0fc4894fe31b0148cbf33387a1b0bf3d
+system/framework/mediatek-telephony-base.jar|d0f18c1c0fc4894fe31b0148cbf33387a1b0bf3d
 
 # Radio (ImsService) - https://github.com/realme-mt6785-devs/ImsService
-priv-app/ImsService/ImsService.apk|88156caa5a726af075035a88624d8bf20d1b2448
+system/priv-app/ImsService/ImsService.apk|88156caa5a726af075035a88624d8bf20d1b2448
 
 # Radio (Oplus)
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so
