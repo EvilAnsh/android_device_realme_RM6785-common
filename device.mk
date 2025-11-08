@@ -266,6 +266,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     hardware/mediatek \
     hardware/mediatek/libmtkperf_client \
+    hardware/mediatek/wlan/wifi_hal \
     hardware/lineage/interfaces/power-libperfmgr \
     $(LOCAL_PATH)
 
@@ -301,10 +302,11 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.mediatek
 
 # Wi-Fi
+$(call soong_config_set,wpa_supplicant_8,board_wlan_mediatek_stability,true)
+
 PRODUCT_PACKAGES += \
     TetheringConfigOverlayNemo \
     WifiOverlayNemo \
-    libwifi-hal-wrapper \
     hostapd \
     wpa_supplicant \
     android.hardware.wifi-service
