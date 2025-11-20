@@ -29,6 +29,7 @@ from extract_utils.utils import (
 namespace_imports = [
     'device/realme/nemo',
 	'hardware/mediatek',
+    'hardware/mediatek/libaedv',
 	'hardware/mediatek/libmtkperf_client',
 ]
 
