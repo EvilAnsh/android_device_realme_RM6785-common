@@ -8,7 +8,6 @@ vendor/lib64/libladder.so
 
 # Audio
 vendor/lib/hw/audio.primary.mt6785.so
-vendor/lib/hw/audio.r_submix.mt6785.so
 vendor/lib/hw/audio.usb.mt6785.so
 vendor/lib/hw/sound_trigger.primary.mt6785.so
 vendor/lib/libalsautils.so:vendor/lib/libalsautils-v30.so;FIX_SONAME
