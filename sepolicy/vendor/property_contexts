@@ -11,6 +11,9 @@ ro.vendor.mtk.omx.log                       u:object_r:vendor_mtk_omx_core_prop:
 ro.vendor.mtk_crossmount                    u:object_r:vendor_mtk_crossmount_prop:s0
 ro.vendor.mtk_deinterlace                   u:object_r:vendor_mtk_deinterlace_prop:s0
 
+# Sensors
+vendor.dynamic_sensor.                      u:object_r:vendor_dynamic_sensor_prop:s0
+
 # Vendor device
 ro.vendor.device                            u:object_r:vendor_device_prop:s0
 ro.vendor.nfc_device                        u:object_r:vendor_device_prop:s0
