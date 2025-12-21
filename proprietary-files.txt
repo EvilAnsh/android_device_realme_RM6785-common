@@ -1318,8 +1318,8 @@ system/framework/mediatek-telephony-common.jar
 # Radio (IMS) - https://pastebin.com/raw/Wa3EZpPr
 system/framework/mediatek-telephony-base.jar|d0f18c1c0fc4894fe31b0148cbf33387a1b0bf3d
 
-# Radio (ImsService) - https://github.com/realme-mt6785-devs/ImsService
-system/priv-app/ImsService/ImsService.apk|88156caa5a726af075035a88624d8bf20d1b2448
+# Radio (ImsService) - https://github.com/EvilAnsh/ImsService
+system/priv-app/ImsService/ImsService.apk|f3c821ef26cfdf7e880a30f99cb6f80a24837a77
 
 # Radio (Oplus)
 odm/lib64/vendor.oplus.hardware.appradio@1.0.so
