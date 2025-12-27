@@ -83,8 +83,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib/hw/audio.primary.mt6785.so': blob_fixup()
         .add_needed('libshim_audio.so')
         .replace_needed('libalsautils.so','libalsautils-v30.so'),
-    'vendor/lib/hw/audio.usb.mt6785.so': blob_fixup()
-        .replace_needed('libalsautils.so','libalsautils-v30.so'),
     'vendor/lib/libMtkOmxCore.so': blob_fixup()
         .binary_regex_replace(b'mtk.vendor.omx.core.log', b'ro.vendor.mtk.omx.log\x00\x00'),
     'vendor/lib/libMtkOmxVdecEx.so': blob_fixup()
