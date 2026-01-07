@@ -1165,7 +1165,6 @@ vendor/bin/gsm0710muxd
 vendor/bin/ipsec_mon
 vendor/bin/md_monitor
 vendor/bin/md_monitor_ctrl
-vendor/bin/muxreport
 vendor/bin/netdagent
 vendor/bin/netdc
 vendor/bin/ppl_agent
@@ -1193,7 +1192,6 @@ vendor/etc/init/init.xcap.rc
 vendor/etc/init/ipsec_mon.rc
 vendor/etc/init/md_monitor.rc
 vendor/etc/init/mtkrild.rc
-vendor/etc/init/muxreport.rc
 vendor/etc/init/netdagent.rc
 vendor/etc/init/networksetting.rc
 vendor/etc/init/ppl_agent.rc
