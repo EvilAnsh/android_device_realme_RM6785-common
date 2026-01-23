@@ -1461,7 +1461,6 @@ vendor/etc/vintf/manifest/manifest.xml
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
-vendor/lib64/libwapi.so
 vendor/lib64/libwifitest.so
 
 # Wifi (Firmware)
