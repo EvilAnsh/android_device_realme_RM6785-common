@@ -25,7 +25,7 @@ PRODUCT_MANUFACTURER := realme
 # Evolution specific flags
 EVO_BUILD_TYPE := Official
 TARGET_BUILD_APERTURE_CAMERA := false
-WITH_GMS := true
+TARGET_USES_MINI_GAPPS := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=realme/RMX2001/RMX2001L1:10/QP1A.190711.020/1594211000:user/release-keys
