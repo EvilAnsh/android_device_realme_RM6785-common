@@ -23,5 +23,10 @@
     "repository"  : "hardware_dolby",
     "branch"      : "bka",
     "target_path" : "hardware/dolby"
+  },
+  {
+    "repository"  : "packages_apps_ViPER4AndroidFX",
+    "branch"      : "bka",
+    "target_path" : "packages/apps/ViPER4AndroidFX"
   }
 ]
