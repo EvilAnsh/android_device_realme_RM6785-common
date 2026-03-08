@@ -7,10 +7,10 @@ vendor/lib64/libladder.so
 # Audio
 vendor/lib/hw/audio.primary.mt6785.so
 vendor/lib/hw/sound_trigger.primary.mt6785.so
-vendor/lib/libalsautils.so:vendor/lib/libalsautils-v30.so;FIX_SONAME
 vendor/lib/libMtkSpeechEnh.so
 vendor/lib/lib_iir.so
 vendor/lib/lib_speech_enh.so
+vendor/lib/libalsautils.so:vendor/lib/libalsautils-v30.so;FIX_SONAME
 vendor/lib/libaudio_engineer_test.so
 vendor/lib/libaudio_param_parser-vnd.so
 vendor/lib/libaudiocompensationfilter_vendor.so
@@ -811,9 +811,9 @@ vendor/lib64/hw/vendor.mediatek.hardware.dfps@1.0-impl.so
 vendor/lib64/vendor.mediatek.hardware.dfps@1.0.so
 
 # EngineerMode - from TECNO-CK9n UP1A.230519.001
+system_ext/app/EngineerMode/EngineerMode.apk|8f64579fe7db633fef0668bd24937d1f32fc433b
 system_ext/lib/libem_support_jni.so|afab3ca5e5bdf8619e66606652a39fac5692d99b
 system_ext/lib64/libem_support_jni.so|21dddde25b7134b186e68052910adf2b4dba8b86
-system_ext/app/EngineerMode/EngineerMode.apk|8f64579fe7db633fef0668bd24937d1f32fc433b
 vendor/bin/em_hidl|bf23d25f7bd6af4bfd9f34c64609e469b8b1d4b2
 vendor/etc/init/em_hidl_user.rc|bdb5893df3e78d2d2adaf72bc7e56dfeee0be308
 vendor/lib64/vendor.mediatek.hardware.engineermode@1.0.so|444376addf581bfc66409ad39a73ffe498e4142e
