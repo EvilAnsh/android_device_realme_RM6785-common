@@ -1061,7 +1061,6 @@ vendor/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so
 # NFC
 odm/etc/init/init.pn8x.nfc.rc
 odm/etc/init/init.pn8x.se.rc
-odm/etc/nfc/libnfc-nxp.conf_19661:vendor/etc/libnfc-nxp.conf
 odm/etc/libnfc-nxp-pnscr.conf
 odm/lib64/libpnscr2.so
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
