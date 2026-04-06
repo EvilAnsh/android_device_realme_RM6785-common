@@ -15,8 +15,8 @@
     "target_path" : "kernel/realme/nemo"
   },
   {
-    "repository"  : "LineageOS/android_device_mediatek_sepolicy_vndr",
-    "branch"      : "lineage-23.2",
+    "repository"  : "Evolution-X-Devices/device_mediatek_sepolicy_vndr",
+    "branch"      : "bka-legacy",
     "remote"      : "github-non-los",
     "target_path" : "device/mediatek/sepolicy_vndr"
   },
