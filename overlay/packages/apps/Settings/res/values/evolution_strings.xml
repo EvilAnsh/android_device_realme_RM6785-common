@@ -1,6 +1,0 @@
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- ROM maintainer name -->
-    <string name="build_maintainer_summary">αиѕн</string>
-    <string name="build_maintainer_donate_url" translatable="false">https://buymeacoffee.com/evilansh</string>
-
-</resources>
