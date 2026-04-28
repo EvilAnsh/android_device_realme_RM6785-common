@@ -16,8 +16,8 @@
 constexpr const char* kProcOperatorPath = "/proc/oppoVersion/operatorName";
 
 struct DeviceProps {
-    std::string model;
     std::string device;
+    std::string model;
 };
 
 void property_override(const char* prop, const char* value, bool add = true) {
@@ -89,12 +89,15 @@ DeviceProps get_device() {
 
 void set_device() {
     const DeviceProps device_props = get_device();
+    std::string codename = "nemo";
 
     if (!device_props.device.empty() && !device_props.model.empty()) {
-        set_ro_build_prop("device", device_props.device);
+        set_ro_build_prop("device", codename);
         set_ro_build_prop("model", device_props.model);
         set_ro_build_prop("name", device_props.model);
-        set_ro_build_prop("product", device_props.model, false);
+        set_ro_build_prop("product", codename, false);
+        
+        property_override("ro.product.board", device_props.device.c_str());
     }
 }
 
